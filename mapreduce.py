@@ -1,12 +1,11 @@
-
-        
+       
 from mrjob.job import MRJob
 from mrjob.step import MRStep
 class WordCount(MRJob):
 def steps(self):
 return [
-  MRStep(mapper=self.mapper_get_word,
-  reducer=self.reducer_count_word)
+ MRStep(mapper=self.mapper_get_word,
+ reducer=self.reducer_count_word)
 ]
 def mapper_get_word(self, _, line):
 ( ) = line.split('\t')
