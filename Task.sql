@@ -2,7 +2,7 @@ CREATE TABLE employee(
 employeeId varchar(5) NOT NULL,
 employeeName varchar(40) NOT NULL,
 employeeEmail varchar(40) NOT NULL,
-);
+)
 
 
 INSERT INTO student VALUES ('M2344','Lai Guang Pei','M2344@gmail.com');
